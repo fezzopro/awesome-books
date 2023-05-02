@@ -1,0 +1,5 @@
+# Dependency directories
+node_modules/
+
+# test file to be ignored by .gitignore
+test.md
