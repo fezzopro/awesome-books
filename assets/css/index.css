@@ -1,9 +1,71 @@
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2%;
+  font-family: cursive;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
+  bottom: 0;
+  position: fixed;
+  padding-bottom: 1%;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-ul-li a {
+  text-decoration: none;
+}
+
+.nav-ul-li a:hover {
+  text-decoration: wavy;
+  font-size: 1.2rem;
+  transition-delay: .05s;
+  transition-duration: .5s;
+}
+
+.boks-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+.timer {
+  justify-content: end;
+  display: flex;
+}
+
+.section-title {
+  display: flex;
+  justify-content: center;
+}
+
+.book-list-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-footer {
+  position: fixed;
+  right: 0;
+  padding-right: 2%;
 }
