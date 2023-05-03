@@ -1,6 +1,7 @@
-import { DateTime } from "./luxon.js";
+import { DateTime } from './luxon.js';
 import books from './books.js';
 import storage from './storage.js';
+
 class Components {
   constructor() {
     this.bookSection = document.querySelector('.book-section');
@@ -22,22 +23,23 @@ class Components {
     const currentTime = DateTime.now().c;
     const timeSlot = document.querySelector('.timer');
     timeSlot.textContent = `${currentTime.year}-${currentTime.month}-${currentTime.day} ${currentTime.hour}:${currentTime.minute}:${currentTime.second}`;
+    return this.bookSection;
   }
 
   displayBooks() {
     // if books, display. Else Display no books
-    if(storage.readLocalStorage().length === 0)
+    if (storage.readLocalStorage().length === 0) {
       this.bookSection.textContent = 'No Books Available';
-    else {
+    } else {
       let listOfBooks = '<ul class="book-ul">';
-      storage.readLocalStorage().forEach(book => {
+      storage.readLocalStorage().forEach((book) => {
         listOfBooks += `
           <li class="book-ul-li">
             <span>${book.title} by ${book.author}</span>
             <button class="delete" value="${book.id}">Delete</button>
           </li>`;
       });
-      listOfBooks += "</ul>";
+      listOfBooks += '</ul>';
       this.pageTitle.textContent = 'List Of Books';
       this.bookSection.innerHTML = listOfBooks;
       this.bookListEventListner();
@@ -82,19 +84,21 @@ class Components {
   }
 
   clearNewBookFormErrorMessage() {
-    if(document.querySelector('.new-book-failure'))
+    if (document.querySelector('.new-book-failure')) {
       document.querySelector('.new-book-failure').remove();
+      return this;
+    }
   }
 
   clearNewBookForm() {
     document.querySelector('.new-form').reset();
-    this.clearNewBookFormErrorMessage()
+    this.clearNewBookFormErrorMessage();
   }
 
   bookListEventListner() {
     const deleteButtons = document.querySelectorAll('.delete');
-    deleteButtons.forEach( (deleteButton) => {
-      deleteButton.addEventListener('click', (deleteButton)=>{
+    deleteButtons.forEach((deleteButton) => {
+      deleteButton.addEventListener('click', (deleteButton) => {
         books.deleteBook(deleteButton.target.value);
         this.displayBooks();
       });
