@@ -8,7 +8,7 @@ class Components {
     this.pageTitle = document.querySelector('.section-title h2');
   }
 
-  initialize() {
+  initialize = () => {
     // if no local storage create one
     if (!storage.isLocalStorage()) {
       storage.createlocalStorage();
@@ -19,14 +19,14 @@ class Components {
     setInterval(this.displayTime, 1000);
   }
 
-  displayTime() {
+  displayTime = () => {
     const currentTime = DateTime.now().c;
     const timeSlot = document.querySelector('.timer');
     timeSlot.textContent = `${currentTime.year}-${currentTime.month}-${currentTime.day} ${currentTime.hour}:${currentTime.minute}:${currentTime.second}`;
     return this.bookSection;
   }
 
-  displayBooks() {
+  displayBooks = () => {
     // if books, display. Else Display no books
     if (storage.readLocalStorage().length === 0) {
       this.bookSection.textContent = 'No Books Available';
@@ -46,7 +46,7 @@ class Components {
     }
   }
 
-  displayForm() {
+  displayForm = () => {
     const form = `
       <form class="new-form" id="new-form">
         <input type="text" placeholder="Book Title" class="book-title" name="title" />
@@ -58,7 +58,7 @@ class Components {
     this.bookSection.innerHTML = form;
   }
 
-  displayContactDetails() {
+  displayContactDetails = () => {
     const contact = `
       <div class="contacts">
         <p>Do you have any questions or just want to say "Hello"?</p>
@@ -74,7 +74,7 @@ class Components {
     this.bookSection.innerHTML = contact;
   }
 
-  displayNewBookError() {
+  displayNewBookError = () => {
     const submitButton = document.querySelector('.save-button');
     const spanError = document.createElement('span');
     spanError.className = 'new-book-failure';
@@ -84,19 +84,19 @@ class Components {
     return this;
   }
 
-  clearNewBookFormErrorMessage() {
+  clearNewBookFormErrorMessage = () => {
     if (document.querySelector('.new-book-failure')) {
       document.querySelector('.new-book-failure').remove();
     }
     return this;
   }
 
-  clearNewBookForm() {
+  clearNewBookForm = () => {
     document.querySelector('.new-form').reset();
     this.clearNewBookFormErrorMessage();
   }
 
-  bookListEventListner() {
+  bookListEventListner = () => {
     const deleteButtons = document.querySelectorAll('.delete');
     deleteButtons.forEach((deleteButton) => {
       deleteButton.addEventListener('click', (deleteButton) => {
