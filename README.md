@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Hello-Microverse</b></h3>
+  <h3><b>Awesombook ES6</b></h3>
 
 </div>
 
@@ -13,13 +13,12 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-  - [🚀 Live Demo](#live-demo)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -32,44 +31,36 @@
 
 # 📖 [Hello-Microverse Project] <a name="about-project"></a>
 
-> This is a microverse project that full stack students have to do on the second day of the first week.
 
-**[Hello-Microverse]** is a project that get students fimilia with setting up linters for better consistence within their code base across the entire team.
+**[Awesome Book ES6]** is a aversion of awesome book that use modular approach
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
   <ul>
     <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
   </ul>
 </details>
 
+### Key Features <a name="key-features"></a>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://github.com/fezzopro/Hello-Microverse)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- **[Use of modules]** 
+- **[Maintain all functionalities]**
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+### Prerequisites <a name="prerequisites"></a>
 
 In order to run this project you need: 
 
@@ -80,36 +71,31 @@ In order to run this project you need:
  
 ```
 
-### Setup
+### Setup <a name="setup"></a>
 
 Clone this repository to your desired folder:
 
 ```
   cd my-folder
-  git clone https://github.com/fezzopro/Hello-Microverse.git
-  git checkout initialize-helloWorld-project
-  cd Hello-Microverse
+  git clone https://github.com/fezzopro/awesome-book-es6.git
+  git checkout feature-awesome-book-modular
+  cd awesome-book-es6
 
 ```
 
-### Install
+### Install <a name="install"></a>
 
-Install this project with:
-
-
-### Usage
-
-To run the project, execute the following command:
+You don't need to install anything
 
 
-### Run tests
+### Usage <a name="usage"></a>
 
-To run tests, run the following command:
+To run the project, open `index.html` into your prefered web browser
 
 
-### Deployment
+### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-You can deploy this project using:
+You can deploy this project using **[GitHub Page](https://pages.github.com/)**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -128,17 +114,9 @@ You can deploy this project using:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[Blog]**
-- [ ] **[Contact_Us]**
-- [ ] **[recommendation]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [Insert popup windows] 
 
 <!-- CONTRIBUTING -->
 
@@ -146,7 +124,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/fezzopro/Hello-Microverse/issues).
+Feel free to check the [issues page](https://github.com/fezzopro/awesome-book-es6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,9 +132,8 @@ Feel free to check the [issues page](https://github.com/fezzopro/Hello-Microvers
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
-If you like this project please give it a star
+If you like this project please give it a star ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +141,6 @@ If you like this project please give it a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse Team & Students
 
