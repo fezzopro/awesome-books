@@ -41,8 +41,8 @@ header {
 .nav-ul-li:hover {
   text-decoration: wavy;
   font-size: 1.1rem;
-  transition-delay: .05s;
-  transition-duration: .5s;
+  transition-delay: 0.05s;
+  transition-duration: 0.5s;
   cursor: pointer;
 }
 
@@ -81,14 +81,14 @@ header {
   padding: 0 20%;
 }
 
-.book-ul-li:nth-child(even) {
-  background-color: rgb(218, 219, 220);
-}
-
 .book-ul-li {
   padding: 0.5% 0;
   display: flex;
   justify-content: space-between;
+}
+
+.book-ul-li:nth-child(even) {
+  background-color: rgb(218, 219, 220);
 }
 
 .book-ul-li:hover {
