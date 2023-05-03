@@ -13,6 +13,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -46,6 +47,11 @@
     <li><a href="#">JavaScript</a></li>
   </ul>
 </details>
+
+### Key Features <a name="key-features"></a>
+
+- **[Use of modules]** 
+- **[Maintain all functionalities]**
 
 <!-- GETTING STARTED -->
 
@@ -89,7 +95,7 @@ To run the project, open `index.html` into your prefered web browser
 
 ### Deployment <a name="triangular_flag_on_post-deployment"></a>
 
-You can deploy this project using GitHubPage
+You can deploy this project using **[GitHub Page](https://pages.github.com/)**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -107,6 +113,10 @@ You can deploy this project using GitHubPage
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [Insert popup windows] 
 
 <!-- CONTRIBUTING -->
 
