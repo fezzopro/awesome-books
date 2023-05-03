@@ -5,29 +5,28 @@ class Storage {
   }
 
   isLocalStorage = () => {
-    
-    return this.localStorage.getItem(this.BOOK_COLLECTION_NAME);
+    const storage = this.localStorage.getItem(this.BOOK_COLLECTION_NAME);
+    return storage;
   }
 
   readLocalStorage = () => {
-    return JSON.parse(this.localStorage.getItem(this.BOOK_COLLECTION_NAME));
+    const storage = JSON.parse(this.localStorage.getItem(this.BOOK_COLLECTION_NAME));
+    return storage;
   }
 
   createlocalStorage = () => {
-    return this.localStorage.setItem(this.BOOK_COLLECTION_NAME, JSON.stringify([]));
+    this.localStorage.setItem(this.BOOK_COLLECTION_NAME, JSON.stringify([]));
   }
 
   saveToLocalStorage = (book) => {
-    return this.localStorage.setItem(this.BOOK_COLLECTION_NAME,
+    this.localStorage.setItem(this.BOOK_COLLECTION_NAME,
       JSON.stringify([...this.readLocalStorage(), book]));
   }
 
   saveAsLocalSorage = (books) => {
-    return this.localStorage.setItem(this.BOOK_COLLECTION_NAME, JSON.stringify(books));
+    this.localStorage.setItem(this.BOOK_COLLECTION_NAME, JSON.stringify(books));
   }
 
-  getCollectionName = () => {
-    return this.BOOK_COLLECTION_NAME;
-  }
+  getCollectionName = () => this.BOOK_COLLECTION_NAME;
 }
 export default new Storage();
