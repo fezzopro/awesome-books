@@ -30,17 +30,20 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 24px;
+  color: #5e1a9c;
 }
 
-.nav-ul-li a {
-  text-decoration: none;
+.nav-ul-li {
+  color: #551a8b;
 }
 
-.nav-ul-li a:hover {
+.nav-ul-li:hover {
   text-decoration: wavy;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition-delay: .05s;
   transition-duration: .5s;
+  cursor: pointer;
 }
 
 .boks-section {
@@ -68,4 +71,58 @@ header {
   position: fixed;
   right: 0;
   padding-right: 2%;
+}
+
+.book-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 20%;
+}
+
+.book-ul-li:nth-child(even) {
+  background-color: rgb(218, 219, 220);
+}
+
+.book-ul-li {
+  padding: 0.5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-ul-li:hover {
+  background-color: rgb(239, 241, 241);
+  cursor: pointer;
+}
+
+.new-form {
+  padding: 0 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text" i] {
+  padding: 10px 10px;
+}
+
+.save-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-button > button {
+  padding: 2% 5%;
+}
+
+.contacts {
+  padding: 0 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-book-failure {
+  color: #c73131;
+  font-size: 0.8rem;
 }
