@@ -81,6 +81,7 @@ class Components {
     spanError.textContent = 'Please fill all the form inputs';
     this.clearNewBookFormErrorMessage();
     submitButton.insertAdjacentElement('beforebegin', spanError);
+    return this;
   }
 
   clearNewBookFormErrorMessage() {
