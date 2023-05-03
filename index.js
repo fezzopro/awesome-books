@@ -1,5 +1,6 @@
 import books from './modules/books.js';
 import components from './modules/components.js';
+
 components.initialize();
 
 const links = document.querySelectorAll('.nav-ul-li');
@@ -26,4 +27,3 @@ document.querySelector('.save-button > button').addEventListener('click', (event
     components.displayNewBookError();
   }
 });
-
