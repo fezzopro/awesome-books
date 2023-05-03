@@ -87,8 +87,8 @@ class Components {
   clearNewBookFormErrorMessage() {
     if (document.querySelector('.new-book-failure')) {
       document.querySelector('.new-book-failure').remove();
-      return this;
     }
+    return this;
   }
 
   clearNewBookForm() {
