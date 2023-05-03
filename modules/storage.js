@@ -5,6 +5,7 @@ class Storage {
   }
 
   isLocalStorage = () => {
+    
     return this.localStorage.getItem(this.BOOK_COLLECTION_NAME);
   }
 
