@@ -25,6 +25,7 @@ class Storage {
 
   saveAsLocalSorage = (books) => {
     this.localStorage.setItem(this.BOOK_COLLECTION_NAME, JSON.stringify(books));
+    return this.readLocalStorage();
   }
 
   getCollectionName = () => this.BOOK_COLLECTION_NAME;
