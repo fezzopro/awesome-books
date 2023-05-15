@@ -1,6 +1,9 @@
 import storage from './storage.js';
 
 class Books {
+  constructor (){
+    this.message = '';
+  }
   saveBooks = (bookTitle, bookAuthor) => {
     const book = {
       id: `${Math.ceil(Math.random() * 1000000)}-${bookTitle}`,
@@ -8,13 +11,13 @@ class Books {
       author: bookAuthor,
     };
     storage.saveToLocalStorage(book);
-    return this;
+    return this.message = 'book saved';
   }
 
   deleteBook = (bookId) => {
     const fileteredBooks = storage.readLocalStorage().filter((book) => book.id !== bookId);
     storage.saveAsLocalSorage(fileteredBooks);
-    return this;
+    return this.message = 'book deleted';
   }
 }
 
